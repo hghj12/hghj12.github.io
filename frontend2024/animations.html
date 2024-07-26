@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animations</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body {
+			width: 100vw;
+			height: 100vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.stars{
+			background: #000 url(stars.png) repeat top center;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			z-index: -2;
+		}
+		.twinkling{
+			background: transparent url(twinkling.png) repeat top center;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			z-index: -1;
+			animation: move-stars 200s linear infinite;
+		}
+		@keyframes move-stars{
+			0%{
+				background-position: 0 0;
+			}
+			100%{
+				background-position: -10000px 5000px;
+			}
+		}
+		.system{
+			width: 700px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.orbita {
+			position: absolute;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: 1px white solid;
+			border-radius: 100%;
+		}
+		.earth{
+			height: 500px;
+			width: 500px;
+			animation: spin 8s linear infinite;
+		}
+		.earth-img{
+			position: absolute;
+			top: 50%;
+			left: -12px;
+			border-radius: 100%;
+			transform: translateY(-50%);
+		}
+		.saturn{
+			height: 500px;
+			width: 500px;
+			animation: spin 8s linear infinite;
+		}
+		.saturn-img{
+			position: absolute;
+			top: 50%;
+			right: -12px;
+			border-radius: 100%;
+			transform: translateY(-50%);
+		}
+		@keyframes spin{
+			from{
+				transform: rotate(0deg);
+			}
+			to{
+				transform: rotate(360deg);
+			}
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="stars"></div>
+	<div class="twinkling"></div>
+	<div class="system">
+		<div class="sun">
+			<img src="sun.png" alt="Sun" clss="">
+		</div>
+		<div class="orbita earth">
+			<img src="earth.png" alt="Earth" class="earth-img">
+			<div class="moon"></div>
+		</div>
+		<img src="saturn.png" alt="Saturn" class="saturn-img">
+	</div>
+</body>
+</html>

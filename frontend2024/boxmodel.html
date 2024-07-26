@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Box Model</title>
+	<style>
+		.test-display{
+		display: block;		
+		}
+		.box1{
+			border: 6px solid #949599;
+			height:100px;
+			width:400px;
+			margin: 20px;
+			padding: 20px; 
+		}
+		.box2{
+			background-color: lime;
+			height: 100px;
+			width: 50%; 
+		} 
+		.h2-1{
+			background-color: lightblue;
+			border-width: 0 0 0 6px;
+			border-style: solid;
+			border-color: darkblue;
+		}
+		.h2-2{
+			background-color: lightblue;
+			border: 4px dotted darkblue; 
+		}
+		.h2-3{
+			background-color: lightblue;
+			border-width: 4px 6px;
+			border-style: double;
+			border-color: darkblue;
+		}
+		.h2-4{
+			background-color: lightblue;
+			border-width: 0 6px;
+			border-style: dashed;
+			border-color: darkblue;
+		}
+		.h2-5{
+			background-color: lightblue;
+			border-width: 0 6px;
+			border-style: outset;
+			border-color: darkblue;
+		}
+		.h2-6{
+			background-color: lightblue;
+			border-width: 4px 0;
+			border-style: solid;
+			border-color: darkblue;
+		}
+		.box3{
+			padding: 10px 15px 22px 18px;
+			margin: 10px 15px 22px 18px;
+			background-color: lightgray;
+			border: 4px solid gray;
+			width: 300px;
+
+			box-sizing: border-box;
+		}
+		.box4{
+			width: 200%;
+			height: 200%;
+			background-color: aqua;
+			margin-left: 100%;
+			box-sizing: border-box;
+			border-radius: 50%;
+		}		
+		
+		.boxwhy{
+			background-color: lightgray;
+			width: 20%;
+			height: 20%;
+		border-width: 50px 0 0 100px;
+		border-style: solid;
+		padding: 5px;
+		margin: 50px 0 0 100px;
+	}
+		.box5{
+			background-color: pink;
+			margin: 20px auto;
+			border-radius: 	100% 0% 100% 0% / 5% 61% 39% 95% ;
+		}
+		
+	</style>
+</head>
+<body>
+	<h1>Работа с блочной моделью</h1>
+	<div>
+		<p class="test-display">first paragraph</p>
+		<p class="test-display">second paragraph</p>
+		<p class="test-display">third paragraph</p>
+	</div>
+	
+		<div class="box1"></div>
+	<div class="box2"></div>
+<h2 class="h2-1">Это подзаголовок под номером 1</h2>
+<h2 class="h2-2">Это подзаголовок под номером 2</h2>
+<h2 class="h2-3">Это подзаголовок под номером 3</h2>
+<h2 class="h2-4">Это подзаголовок под номером 4</h2>
+<h2 class="h2-5">Это подзаголовок под номером 5</h2>
+<h2 class="h2-6">Это подзаголовок под номером 6</h2>
+<div class="box3">
+<p>rem ipsum dolor sit amet consectetur adipisicing elit. Quam, perferendis saepe accusamus nulla veritatis enim quasi rem suscipit ad voluptatibus debitis architecto nemo, earum nobis quisquam sed distinctio iste harum.</p>
+</div>
+<div class="box4">
+	
+</div>
+	
+<div class="boxwhy">
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, perferendis saepe accusamus nulla veritatis enim quasi rem suscipit ad voluptatibus debitis architecto nemo, earum nobis quisquam sed distinctio iste harum.</p>
+	<p>Lorem, ipsum dolor sit amet, popdisfgdhyfguydgfuycgdfhdgsfgdsfdu sfudgfjkbvucxbppppppppppppppppp</p>
+</div>
+
+<div class="box5">
+	
+</div>
+</div>
+</body>
+</html>

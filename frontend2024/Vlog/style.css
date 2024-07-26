@@ -1,0 +1,110 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+	header{
+		maergin-top: 32px;
+		font-family: 'wittgenstein', sans-serif;
+		font-weight: bolder;
+	}
+
+	h1{
+		text-align: center;
+		font-family: 'wittgenstein', sans-serif;
+		font-weight: bolder;
+
+	}
+	.header-p{
+		text-align: center;
+		margin-top: 8px;
+		font-family: 'wittgenstein', sans-serif;
+		font-weight: bolder;
+	}
+	.header-span{
+		color: white;
+		background: black;
+		padding: 2px 4px;
+	}
+	main{
+		width: 80%;
+		margin: 32px auto;
+	}
+	img{
+		width: 100%;
+		height: auto;
+	}
+	section{
+		width: 65%;
+		float: left;
+	}
+	article{
+		margin-bottom: 24px;
+		box-shadow: 1px 0.5px 10px darkgray;
+		font-family: <
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap');
+
+	}
+	.blog-entry-content{
+		padding: 12px;
+	}
+	h3 h4 h5{
+		font-family: 'wittgenstein', sans-serif;
+		font-weight: bolder;
+	}
+	 h5{
+	 	margin-top: 8px;
+	 	font-family: 'wittgenstein', sans-serif;
+		font-weight: bolder;
+	 }
+	 .blog-date{
+	 	color: gray;
+	 }
+	 botton{
+	 	padding: 8px 12px;
+	 	border: 1px solidgray;
+	 }
+	 .blog-comments{
+	 	float: right;
+	 	margin-top: 8px;
+	 }
+	 .blog-comments-number{
+	 	color: white;
+	 	background: black;
+	 	padding: 2px 4px;
+	 }
+	 .right-container{
+	 	float: right;
+	 	margin-left: 5%;
+	 	width: 30%;
+	 }
+	 aside{
+	 	box-shadow: 1px 0.5px 10px darkgray;
+	 }
+	 .menu-content{
+	 	padding: 12px;
+	 }
+	 .menu-p{
+	 	margin-top: 8px;
+	 }
+	 
+	 .Tags{
+	 	padding: 25px;
+	 	background: lightgray;
+	 	margin-top: 15px;
+	 	text-align: left;
+	 	font-weight: normal;
+	 	}
+	.poll{
+		padding: 30px;
+		line-height: 50px;	
+	}
+	.post-tags{
+		background: lightgray;
+		padding: 7px;
+	}
+	.active-tag{
+		background-color: black;
+		color: white;
+	}

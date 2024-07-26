@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Sneakers shop</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		html{
+			cursor: url(https://img.icons8.com/clouds/100/cursor.png),auto;
+		}
+		body{
+			min-height: 100vh;
+			background: linear-gradient(45deg, royalblue 65%, darkorange 35%);
+			font-family: 'ZCOOL KuaiLe', cursive;
+		}
+		main{
+			width: 50%;
+			margin: 150px auto;
+		}
+		article{
+			background-color: #fff;
+			padding: 28px 32px;
+			border-radius: 16px;
+			box-shadow: 10px 20px darkorange, 10px 30px royalblue;
+		}
+		.Title{
+			font-size: 64px;
+			color: darkorange;
+			font-weight: 500;
+			letter-spacing: 2px;
+			text-shadow: 3px 4px royalblue, 4px 5px darkorange;
+			width: fit-content;
+			background: linear-gradient(transparent 60%, rgba(225,140,0,0.5) 40%);
+			background-size: 0%;
+			background-repeat: no-repeat;
+			transition: 0.5s ease;
+			cursor: url("https://img.icons8.com/bubbles/50/cursor.png"),auto;
+		}
+		.Title:hover{
+			background-size: 100%;
+		}
+		.subtitle{
+			font-size: 24px;
+			color: darkorange;
+			font-weight: bold;
+			padding: 8px;
+			margin: 24px 0;
+			text-shadow: 2px 2px 1px royalblue;
+		}
+		::selection{
+			color: #FF00FF;
+			background: lightblue;
+		}
+		section{
+			margin-top: 48px;
+			background-color: white;
+			padding: 12px 32px;
+			border-radius: 16px;
+			box-shadow: 8px 8px darkorange 16px 18px royalblue;
+		} 
+		.sneakers-container{
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+			gap: 20px;
+		}
+		.sneaker-container{
+			width: 280px;
+			border-radius: 12px;
+			box-shadow: 12px 12px royalblue, 0 0 16px #EDFAFA;
+			margin-bottom: 32px;
+			height: 550px;
+		}
+		.sneaker-name{
+			padding-left: 16px;
+			font-weight: bold;
+			font-size: 24px;
+			color: royalblue;
+			text-shadow: 2px 2px darkorange;
+		}
+		.sneaker-price{
+			padding-left: 16px;
+			margin-top: 8px;
+			font-size: 18px;
+			font-weight: bold;
+			color: darkorange;
+			text-shadow: 2px 2px royalblue;
+		}
+		.img-container{
+			height: 70%;
+			border-radius: 12px 12px 0 0;
+			background-size: cover !important;
+			background-position: center !important;
+			background-repeat: no-repeat !important;
+			margin-bottom: 8px;
+		}
+		.img1{
+			background: url(https://i.ebayimg.com/images/g/HroAAOSwntZjmC5n/s-l400.jpg);
+		}
+		.img2{
+			background: url(https://hips.hearstapps.com/hmg-prod/images/hoka-zinal-13085-1643565794.jpg?crop=1xw:0.84375xh;center,top&resize=1200:*);
+		}
+		.img3{
+			background: url(https://5.imimg.com/data5/SELLER/Default/2022/11/KE/VX/MV/116453489/white-casual-shoes-for-men-1000x1000.jpg);
+		}
+		.img4{
+			background: url(https://cdn.allbirds.com/image/fetch/q_auto,f_auto/w_1776,f_auto,q_auto/https://www.allbirds.com/cdn/shop/files/TR2MNNT_SHOE_ANGLE_GLOBAL_MENS_TREE_RUNNER_NAVY_NIGHT_DARK_NAVY.png?v=1717710531);
+		}
+		.img5{
+			background: url(https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/cbddd67b-444b-4a7c-b458-20643ab89b1b/custom-nike-dunk-high-by-you-shoes.png);
+		}
+		.button1{
+			width: 260px;
+			padding: 12px;
+			font-size: 18px;
+			font-weight: bold;
+			margin: 16px 10px 4px 10px;
+			text-shadow: 2px 2px white;
+			background: darkorange;
+			color: royalblue;
+			text-align: center;
+			border-radius: 12px;
+			box-shadow: 2px 2px black;
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<article>
+			<div class="Title">Sneakers shop</div>
+			<div class="subtitle">The best sneakers of 2024</div>
+		</article>
+		<section>
+			<div class="sneakers-container">
+				<div class="sneaker-container">
+					<div class="img-container img1"></div>
+					<div class="sneaker-name">Men's Winter Warm </div>
+					<div class="sneaker-price">$32.45</div>
+					<div class="button1">add to cart</div>
+				</div>
+				<div class="sneaker-container">
+					<div class="img-container img2"></div>
+					<div class="sneaker-name">The Best Lightweight Running Shoes in 2023</div>
+					<div class="sneaker-price">$46.99</div>
+					<div class="button1">add to cart</div>
+				</div>
+				<div class="sneaker-container">
+					<div class="img-container img3"></div>
+					<div class="sneaker-name">PVC Comfort Foam White </div>
+					<div class="sneaker-price">$300</div>
+					<div class="button1">add to cart</div>
+				</div>
+				<div class="sneaker-container">
+					<div class="img-container img4"></div>
+					<div class="sneaker-name">Men's tree runners</div>
+					<div class="sneaker-price">$98</div>
+					<div class="button1">add to cart</div>
+				</div>
+				<div class="sneaker-container">
+					<div class="img-container img5"></div>
+					<div class="sneaker-name">Nike Dunk High By You</div>
+					<div class="sneaker-price">$155</div>
+					<div class="button1">add to cart</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+</body>
+</html>

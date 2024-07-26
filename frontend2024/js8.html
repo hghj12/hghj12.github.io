@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JavaScript --- lesson 8</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
+	<style>
+		body{
+		height: 1000px;
+		background-color: #ff98004d;
+		margin: 0;
+		font-family: "El Messiri" sans-serif;
+	}
+	#box{
+		width: 50%;
+	/*	height: 100%; */
+		margin: auto;
+		background-color: #fff;
+		padding: 30px;
+	}
+	#h1{
+		margin-top: 0;
+	}
+	img{
+		width: 100%;
+		display: block;
+	}
+	.blur{
+		filter: blur(5px);
+	}
+	</style>
+</head>
+<body>
+	<div id="box">
+		<h1 id="h1">Orange</h1>
+		<img class="blur" src="smallerfunny_shape.jpg" data-src="funny_shape.jpg" alt="Ornage">
+		<img class="blur" src="orange.webp" data-src="orange2.jpeg" alt="Ornage">
+		<p id="text1">Orange S.A., «Оранж» — французская компания, один из крупнейших мировых телекоммуникационных операторов, предоставляет услуги сотовой связи, фиксированной связи а также доступа к интернету.</p>
+				<img class="blur" src="orange.webp" data-src="orange2.jpeg" alt="Ornage">
+			<p id="text2">Бренд Orange появился в 1994 году в Великобритании, когда компания Microtel Communications приобрела лицензию на развитие сотовой связи; в то время Microtel контролировалась гонконгским конгломератом Hutchison Whampoa и британской промышленной группой British Aerospace. </p>
+			<img class="blur" src="smallhippo.jpg" data-src="hippo.jpg" alt="Ornage">
+			<img class="blur" src="whale_2.webp" data-src="whale.webp" alt="Ornage">
+	</div>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+		let box = document.getElementById("box");
+		let counter = 0;
+		let lazyImages = [].slice.call(document.querySelectorAll(".blur"));
+		console.log(lazyImages, lazyImages instanceof Array)
+
+		function lazyLoad() {
+			for (const lazy of lazyImages){
+			counter += 1;
+			console.log(counter);
+			//console.log(lazy.getBoundingClientRect());
+			//console.log(window.innerHeight);
+			if (lazy.getBoundingClientRect().top<= window.innerHeight){
+				if (lazy.hasAttribute("data-src")) {
+					console.log (`changing #${counter}`)
+					console.log("there is data-src");
+					let dataSrc = lazy.getAttribute("data-src");
+					lazy.setAttribute("src", dataSrc);
+					lazy.removeAttribute("data-src");
+					lazy.classList.remove("blur");
+					}
+				}
+			}
+			console.log(lazyImages);
+			console.log(lazyImages.filter((img)=>img.hasAttribute("data-src")));
+			if (lazyImages.filter((img)=>img.hasAttribute("data-src")).length === 0){
+				document.removeEventListener("scroll", lazyLoad);
+			}
+			}
+		document.addEventListener("scroll", lazyLoad, false);
+		//document.addEventListener("scroll", function() {console.log(scroll)})
+	});
+	</script>
+</body>
+</html>

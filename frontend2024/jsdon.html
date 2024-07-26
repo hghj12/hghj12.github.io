@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>work with Java</title>
+	<style>
+		p{	
+			font-size: 32px;
+			font-family: sans-serif;
+			line-height: 1.5;
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<!--<p id="text1">Lorem ipsum dolor sit amet.</p>
+	<div class= "box"></div>
+	<div class= "box"></div>
+	<div class= "box"></div>
+	<div class= "box"></div>
+	<div class= "box"></div>
+	<span class= "box"></span>
+	<span class= "box"></span>
+	<span class= "box"></span>
+	<span class= "box"></span>
+	<span class= "box"></span>
+	<span></span>
+	<span></span>
+	<span></span>
+	<span></span>-->
+
+	<div id = "box1">
+		<p id="text1">I---first</p>
+		<p id="text2">I---second</p>
+		<p id="text3">I---third</p>
+		<p id="text4">I---forth</p>
+	</div>
+	<script>
+
+		let text1 = document.getElementById("text1");
+		const attr = "class";
+		if (text1.hasAttribute(attr)){
+			console.log(text1.getAttribute(attr));
+		}else{
+			console.log(`no atrributes ${attr}`)
+		}
+
+		let websiteLinks = [
+			{websiteName:"Wikipedia", websiteLink:"https://Wikipedia/org"},
+			{websiteName:"Youtube", websiteLink:"https://www.youtube.com/"},
+			{websiteName:"Instagram", websiteLink:"https://www.instagram.com/"},
+			{websiteName:"Tik Tok", websiteLink:"https://www.tiktok.com/"},
+			{websiteName:"Twitter", websiteLink:"https://x.com/"},
+			{websiteName:"Website", websiteLink:"https://www.website.com/?source"},
+			]
+		let aElements = []
+		for (let i = 0; i < websiteLinks.length; i++){
+		let a = document.createElement("a");
+		a.textContent = websiteLinks[i].websiteName;
+		a.setAttribute("href", websiteLinks[i].websiteLink);
+		let p = document.createElement("p");
+		p.append(a);
+		aElements.push(p);
+		}
+		console.log(aElements)
+		document.body.prepend(...aElements)
+
+
+		//let text1 = document.getElementById("text1");
+		//let pStyle = getComputedStyle(text1)
+		//console.log(pStyle.color); 
+		//let text2 = document.getElementById("text2")
+		//if (getComputedStyle(text2).color !== "rgb(0,0,255)"){
+			//text2.style.color = "rgb(0, 0, 255)";
+		//}else {
+			//text2.style.color = "rgb(0, 255, 0)";
+		//}
+
+
+		//let p = document.getElementById("text1");
+		//p.textContent = "new text";
+		//p.style.cssText = "color: dodgerblue; \
+						//	font-size: 50px; \
+						//	text-align: center; \ ";
+
+		//let box1 = document.getElementById("box1");
+		//box1.innerHTML = "<p id='new_text'>it's a new text</p>";
+
+		//let p = document.createElement("p");
+		//let beforeP = document.getElementById("text1");
+		//p.append("added with append");
+		//p.id = "before";
+		//p.style.color = "red";
+		//beforeP.after||before(p);
+		//let div = document.getElementById("box1");
+		// div.append(p);
+		// div.prepend(p);
+		//beforeP.replaceWith(p);
+
+		//let paragraphsCollection = [];
+		//let divBox1 = document.getElementById("box1");
+		//for (let i = 0; i < 5; i++){
+		//	paragraphsCollection.push(document.createElement("p"));
+		//	paragraphsCollection[i].textContent = "new paragraphs" + (i + 1);
+		//	paragraphsCollection[i].id= "p" + (i + 1);
+		//}
+		//divBox1.prepend(...paragraphsCollection);
+
+
+			//let cloned = document.getElementById("box1").cloneNode(true);
+			//cloned.id = "box2";
+			//document.body.insertBefore(cloned, document.getElementById("box1"));
+
+			//let firstP = document.getElementById("text1");
+			//console.log(firstP);
+			//let removed = document.body.removeChild(firstP);
+			//cnsole.log(removed)	
+			//let paragraphs = document.getElementByTagName("p");
+			//console.log(paragraphs);
+			//while (paragraphs.length > 0){
+				//document.body.removeChild(paragraphs[0]);
+			//}
+
+
+			//let paragraph = document.getElementById("text1");
+			//console.log(paragraph);
+			//paragraph.style.color = "dodgerblue";
+			//paragraph.style.fontSize = "50px";
+			//paragraph.style.backgroundColor = "#ffbbbb";
+
+			//const changeStyle = (elem) => {
+			//	const colors = ["red", "blue", "yellow", "gold", "silver", "black", "white",]
+			//	elem.style.height = "100px";
+			//	elem.style.width = "100px";
+			//	elem.style.backgroundColor = "#" + (0x1000000 + (Math.random() * 0xffffff)).toString(16).substr(1,6);
+			//	elem.style.margin = "10px";
+			//	elem.style.display = "inline-block";
+			//};	
+
+			//let divs = document.getElementsByClassName("box");
+			//for (let i = 0; i < divs.length; i++) {
+			//	changeStyle(divs[i]);
+			//console.log(divs);
+			//}	
+				//for (let i = 1; i < divs.length; i+=2 ){
+					//divs[i].style.backgroundColor = "dodgerblue"
+				//}
+			//let divsWithBox = document.querySelectorAll("div");
+			//console.log(divsWithBox);
+		//	for (let i = 0; i < divsWithBox.length; i++) {
+			//	divsWithBox[i].style.height = "50px"
+			//	divsWithBox[i].style.width = "50px"
+			//}
+			//let onlySpans = document.getElementsByTagName("span");
+			//console.log(onlySpans);
+			//for (let i = 0; i < onlySpans.length; i++){
+			//	onlySpans[i].style.height="30px";
+			//	onlySpans[i].style.width = "30px";
+			//	onlySpans[i].style.margin= "10px";
+			//	onlySpans[i].style.display= "inline-block"
+			//	onlySpans[i].style.backgroundColor = "deeppink";
+			//}
+			//let boxes = document.getElementsByClassName("box");
+			//const boxerNumber = boxes.length;
+			//for (let i = 0; i < boxesNumber; i++){
+				//boxes[i].style,display= "block"
+				//boxes[i].style.height = "50px"
+				//boxes[i].style.backgroundColor = "dodgerblue"
+
+			//let div = document.createElement("div");
+			//div.style.height = "100px";
+			//div.style.backgroundColor =  "#" + (0x1000000 + (Math.random() * 0xffffff)).toString(16).substr(1,6);
+			//document.body.insertBefore(div, boxes[i]);
+			//}
+
+		//let paragraph = document.getElementById("text1");
+		//paragraph.textContent = "new text"
+		//for (let i = 0; i < 10; i++) {
+		//const color = "#" + (0x1000000 + (Math.random() * 0xffffff)).toString(16).substr(1,6);
+			//let newParagraph = document.createElement("p");
+			//newParagraph.style.color = color;
+			//newParagraph.textContent = "мой цвет" + color;
+			//document.body.insertBefore(newParagraph, paragraph);
+			//}
+
+			//for (let i = 0; i < 10; i++){
+			//	const color = "#" + (0x1000000 + (Math.random() * 0xffffff)).toString(16).substr(1,6);
+			//	let newSpan = document.createElement("span");
+			//	newSpan.style.backgroundColor = color;
+			//	newSpan.textContent = color;
+			//	document.body.insertBefore(newSpan, paragraph);
+			//}	
+	</script>
+</body>
+</html>

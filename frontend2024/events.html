@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JAvascript</title>
+</head>
+<body>
+	<button id="btn">Buttoon</button>
+	<button id="btn2">Button</button>
+	<script type="text/javascript">
+
+		let b = document.getElementById("btn");
+		b.counter = 0;
+	/*	console.log(b);
+		b.onclick = function() {
+			this.counter += 1;
+			console.log("button was pressed" + this.counter);
+				if (this.counter % 2 === 1){
+				changeBackground(this,
+								"blue",
+								"0 0 10px 0 #4776e6");
+			}else{
+			changeBackground(this,
+								"red",
+								"0 0 10px 0 #8a2387");
+			}; 
+       }; */
+
+		b.style.cssText = "border: none;\
+							display: block; \
+							font-size: 20px;\
+							background: linear-gradient(to right, #8a2387, #e94057, #f27121);\
+							color: #fff;\
+							box-shadow: 0 0 10px 0 #8a2387;\
+							width: 200px;\
+							height: 60px;\
+							cursor:pointer;\
+							outline: none;\
+							margin: 100px auto;\
+							";
+		function changeBackground(tag, bg,bxs ) {
+			    tag.style.background = bg;
+			    tag.style.boxShadow = bxs;
+				//if(b.counter % 2){
+        		//tag.style.boxShadow = "0 0 10px 0 #8a2387";
+        		//tag.style.background = "linear-gradient(to right, #8a2387, #e94057, #f27121)";
+		//}else{		
+			//tag.style.background = "linear-gradient(to left, #4776e6, #8e54e0)";
+			//tag.style.boxShadow = "0 0 10px 0 #4776e6";
+			//};
+		}
+		let b2 = document.getElementById("btn2");
+		btn2.style.cssText = "border: none;\
+							  display: block;\
+							  font-size: 18px;\
+							  background:dodgerblue;\
+							  color: #fff;\
+							  box-shadow: 0 0 10px 0 dodgerblue;\
+							  width:200px;\
+							  height: 60px;\
+							  cursor: pointer;\
+							  outline: none;\
+							  margin: 100px auto;\
+							  ";
+		b2.counter = 0;
+		b2.onmouseover = function() {
+			this.counter += 1;
+			console.log("cursor hover" + this.counter + "times")
+			if (this.counter % 2 === 1){
+				changeBackground(this,
+								"#8e54e9",
+								"0 0 10px 0 #8e54e9");
+			}else{
+				changeBackground(this,
+								"#f12711",
+								"0 0 10px 0 #f12711");
+			};
+		};
+		
+		b2.oncontextmenu = function() {
+			console.log("pressed on button with right side");
+		};
+
+	//	b2.onmousedown = function(){
+	//		console.log("left is held");
+	//	}
+	//	b2.onmouseup = function() {
+	//		console.log("is released")
+	//	}
+		
+		
+		function f1(){
+			console.log("pressed with left")
+		};
+		function f2(){
+			console.log("hello")
+		};
+
+		b2.addEventListener("click", f1);
+		b2.addEventListener("click", f2);
+		b2.removeEventListener("click", f1);
+
+
+		
+
+		function changeCounter() {
+			this.counter += 1;
+			console.log (`buttoon was pressed ${this.counter}`);
+		}
+
+		function changeBG() {
+			if(this.counter % 2 === 1) {
+				this.style.background = "blue";
+				this.style.boxShadow = "0 0 10px 0 #4776e6";	
+			}else{
+				this.style.background = "red";
+				this.style.boxShadow = "0 0 10px 0 #8a2387";
+			}
+		}
+		b.addEventListener("click", changeCounter);
+		b.addEventListener("click", changeBG)
+
+	</script>
+</body>
+</html>

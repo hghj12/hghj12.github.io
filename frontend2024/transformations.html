@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Преобразование и анимации</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.grid{
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			width: 60%;
+			margin: 40px auto;
+			border: 2px solid lightblue;
+			padding: 20px;
+			grid-gap: 20px;
+		}
+		.box{
+			height: 80px;
+			background-color: darkcyan;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: white;
+			font-weight: bold;
+			transition: 0.3s;
+		}
+		
+		.box-1:hover{
+			transform: translateX(10px);
+		}
+		.box-2:hover{
+			transform: translateY(10px);
+		}
+		.box-3:hover{
+			transform: translate(-10px, -10px);
+		}
+		.box-4:hover{
+			transform: scaleX(1.1);
+		}
+		.box-5:hover{
+			transform: scaleY(1.25);
+		}
+		.box-6:hover{
+			transform: scale(1.1, 1.25);
+		}
+		.box-7:hover{
+			transform: rotate(30deg);
+		}
+		.box-8:hover{
+			transform: skewY(5deg);
+		}
+		.box-9:hover{
+			transform: skewY(-15deg);
+		}
+		.box-9{
+			transform-origin: right bottom;
+			animation-name: change-color, rotate;
+			animation-duration: 0.5s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+		}
+		.box-7{
+			transform-origin: left top;
+		}
+		@keyframes change-color {
+			0%{
+				background-color: #3C13AF;
+			}
+			50%{
+				background-color: #8BEA00;
+			}
+			100%{
+				background-color: #FF6F00;
+			}
+		}
+		@keyframes rotate {
+			0%{
+				rotate: -0deg;
+			}
+			25%{
+				rotate: -90deg;
+			}
+			50%{
+				rotate: -180deg;
+			}
+			100%{
+				rotate: -360deg;
+			}
+		}
+		.box-5{
+			animation-name: rotate, change-color;
+			animation-duration: 0.0001s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+		}
+		.box-1{
+			background-color: black;
+			animation-name: rotate;
+			animation-duration: 0.1000s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;		
+		}
+	</style>
+</head>
+<body>
+	<div class="grid">
+		<div class="box box-1"></div>
+		<div class="box box-2">box-2</div>
+		<div class="box box-3">box-3</div>
+		<div class="box box-4">box-4</div>
+		<div class="box box-5">box-5</div>
+		<div class="box box-6">box-6</div>
+		<div class="box box-7">box-7</div>
+		<div class="box box-8">box-8</div>
+		<div class="box box-9">box-9</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flex box</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.flex-box1{
+			display: flex;
+			width: 800px;
+			flex-flow: wrap row;
+			gap: 10px;
+			border: 2px solid black;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.flex-box1-element{
+			width: 200px;
+			height: 200px;
+			border: 2px solid gray;
+		}
+		.flex-p{
+			text-align: center;
+		}
+		.red{
+			width: 250px;
+			height: 250px;
+			background-color: crimson;
+		}
+		.blue{
+			width: 250px;
+			height: 250px;
+			background-color: skyblue;
+			order: 1;
+		}
+		.start{
+			align-self: flex-start;
+		}
+	</style>
+</head>
+<body>
+	<div class="flex-box1">
+		<div class="flex-box1-element red">
+		<p class="flex-p">element 1</p>
+	</div>
+		<div class="flex-box1-element blue">
+		<p class="flex-p">element 2</p>
+	</div>
+		<div class="flex-box1-element start">
+		<p class="flex-p">element 3</p>
+	</div>
+		<div class="flex-box1-element">
+		<p class="flex-p">element 4</p>
+	</div>
+		<div class="flex-box1-element">
+		<p class="flex-p">element 5</p>
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+	<title>Позиционирование в CSS</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: borer-box;
+		}
+		body{
+			font-family: 'Inter' sans-serif;
+			min-height: 2000px;
+			position: relative;
+		}
+		.left{
+			margin: 30px;
+			float: left;
+		}
+		.right{
+			margin: 30px;
+			float: right;
+		}
+		.p-img{
+			font-size: 20px;
+		}
+		.float{
+			display: none;
+		}
+		.relative{
+			width: 500px;
+			margin: auto;
+			position: relative;
+			top: 300px;
+			display: none;
+		}
+		h1{
+			font-size: 64px;
+			font-weight: 800;
+			text-align: enter;		
+		}
+		.circle-green{
+			position: absolute;
+			background-color: #ADFCBA;
+			width: 600px;
+			min-height: 600px;
+			border-radius: 50%;
+			right: -300px;
+			top: 200px;
+			display: none;
+		}
+		.circle-blue{
+			position: absolute;
+			background-color: #ADE9FC;
+			width: 800px;
+			min-height: 800px;
+			border-radius: 50%;
+			left: -400px;
+			top: -400px;
+			z-index: 1;
+			display: none;
+		}
+		.circle-dark{
+			position: fixed;
+			background-color: #6DC8E4;
+			width: 600px;
+			min-height: 600px;
+			border-radius: 50%;
+			left: -300px;
+			top: -300px;
+			z-index: 10;
+			display: none;
+		}
+		.sticky{
+			font-size: 24px;
+			font-weight: 500;
+			text-align: center;
+			margin-top: 20px;
+			position: sticky;
+			top: -1px;
+		}
+		.text{
+			margin-top: 14px;
+		}
+		.one{
+			position: absolute;
+			background-color: #ADE9FC;
+			width: 100%;
+			min-height: 1000px;
+			border-radius: 50%;
+		}
+				
+		.zero{
+			background-color: skyblue;
+			width: 200px;
+			min-height: 200px;
+			position: fixed;
+			top: 300px;
+			right: 100px;
+			border-radius: 50%;
+				
+		}
+		.why	{
+			position: fixed;
+			background-color: #6DC8E4;
+			width: 600px;
+			min-height: 600px;
+			border-radius: 50%;
+			left: -30px;
+			top: -30px;
+		}
+		.two{
+			position: fixed;
+			background-color: #6DC8E4;
+			width: 600px;
+			min-height: 600px;
+			border-radius: 50%;
+			left: 500px;
+			top: 30px;
+		}
+		.three{
+		position: fixed;
+			background-color: #6DC8E4;
+			width: 600px;
+			min-height: 600px;
+			border-radius: 50%;
+			left: 30px;
+			top: 300px;
+		}	
+		.four{
+			background-color: black;
+			position: sticky;
+			width: 100px;
+			min-height: 100px;
+			top: 300px;
+			right: 100px;
+			border-radius: 50%;
+		}
+		html{
+			overflow-x: hidden;
+		}
+
+	</style>
+</head>
+<body>
+	<dif class="float">
+		<img class="left" src="flower-clipart_zk1IV5FO_thumb.jpg" alt="">
+		<p>Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Velit provident accusamus, at, amet id tempora perspiciatis aperiam dicta repellat unde nesciunt enim esse, commodi autem repellendus, fugit harum. Laborum ipsa architecto obcaecati sint, minima est quisquam fuga culpa dignissimos autem ipsum non quibusdam consequuntur sapiente facilis, voluptatem nesciunt nihil odio minus magni perspiciatis repudiandae. Iste architecto eveniet id maiores tenetur distinctio, corporis minus vel vero accusamus nemo voluptatum, odio excepturi molestiae mollitia praesentium? Cumque, voluptatem qui autem distinctio accusamus ut eligendi repellendus, sint sit, odio pariatur consequatur dolores, laudantium quibusdam laboriosam. Nam dolores omnis vero sunt repudiandae ducimus tempore corporis, facilis, dolor labore voluptatem iure et odit enim officia, sed obcaecati numquam recusandae ut nesciunt nostrum ullam illum. Harum inventore illo sunt obcaecati illum nobis veniam optio sint quis accusantium. Repellendus autem quidem nisi dicta provident delectus numquam, porro fuga sunt laborum maxime nostrum a rem dolore perspiciatis iure unde eius ducimus pariatur consequuntur quos molestias non ex. Quidem architecto quos perspiciatis in, eos ex quo molestias vero, nostrum consequatur exercitationem temporibus aut odit iste. Ab ipsam autem commodi unde voluptate magni sequi aperiam, inventore, reiciendis illum praesentium hic adipisci in consequatur voluptatem, velit assumenda doloribus sunt voluptatum necessitatibus vel iure quam quisquam. Amet officiis alias dolore nemo quasi et repudiandae natus reprehenderit sapiente maiores rerum inventore praesentium voluptates, laudantium ut iste mollitia quo explicabo deserunt nesciunt autem ducimus ullam adipisci sed. Aliquam veritatis nam, explicabo aspernatur nemo ad exercitationem inventore, harum placeat quae, pariatur facilis ducimus qui tempora ea voluptatum quaerat illum. Fuga, odit iusto quae in voluptatem atque assumenda, illum quaerat veniam, dolorem labore rerum ipsum non nostrum magni consequatur suscipit libero at sed esse similique reprehenderit aperiam vel, quo. Repellat, optio, possimus laboriosam porro rerum minima nemo vel totam, asperiores dolores quos quisquam exercitationem et ad nisi pariatur eos. Consequatur eligendi nihil aspernatur voluptatum. Vel suscipit quas, quo accusamus, repellat iste est incidunt commodi hic quaerat maxime. Veritatis rem nihil eveniet mollitia obcaecati excepturi fugit placeat accusantium? Corrupti cum voluptate consectetur corporis nam? Ipsa alias laboriosam assumenda, ducimus laborum, eum et vitae perferendis perspiciatis temporibus amet fugiat itaque saepe tempore vel excepturi neque voluptatum, doloribus eveniet delectus voluptas commodi? Atque ex earum totam ea sit magni laudantium illum debitis laborum placeat. Earum quis reprehenderit molestias iste laborum cumque vitae obcaecati recusandae quisquam voluptas provident accusamus enim ipsum autem veritatis, dignissimos laboriosam, quos ipsa nesciunt et velit, illum tenetur consequatur esse, magnam. Atque nostrum repudiandae id repellat accusamus nam, quae vero aliquam delectus voluptate magnam necessitatibus nesciunt asperiores voluptates nisi quos eos. Molestias voluptate amet repudiandae magnam veniam, voluptatum velit omnis incidunt labore rem dolore error ipsam minima. Aspernatur consequatur laboriosam ad autem nesciunt obcaecati magni hic ipsa, enim, est odit inventore, eos expedita! Quas fugiat non cumque assumenda debitis maiores labore culpa, sequi illum deserunt optio illo nihil impedit molestias quaerat doloribus dignissimos molestiae animi porro officiis ipsam voluptates sint. Repudiandae suscipit obcaecati deleniti omnis maxime dolor harum cupiditate reiciendis natus quos voluptatem alias, blanditiis ex incidunt.</p>
+		<img class="right" src="9iRLAepkT.png" alt="">
+		<p>Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Veniam, odio? Quo accusantium id, atque, laboriosam repudiandae at eos modi, sed quia vero eveniet explicabo aspernatur nam cum aliquid nulla unde. Quisquam iusto facilis obcaecati aut, beatae, optio ex sequi suscipit rem maiores consequatur debitis? Iusto assumenda quae accusantium voluptas eligendi veritatis, facere blanditiis quaerat saepe distinctio, quasi sapiente explicabo amet eaque ullam nam? Aliquid, harum, eaque. Culpa architecto nobis deserunt sit, adipisci perferendis dicta, perspiciatis qui doloribus laudantium atque, est! Rem, pariatur at fugit deleniti quod asperiores, quia totam quos repellendus facere expedita, repudiandae accusantium assumenda quae enim ea laudantium ab. Minima, ipsum! Impedit alias blanditiis rem cum illo veniam, laboriosam enim ipsum voluptatibus excepturi iste vel, doloribus minus repellat reiciendis deleniti modi possimus vitae at tempora molestiae. Minus soluta accusantium sapiente est autem molestiae incidunt cumque fuga numquam excepturi necessitatibus rerum dolorum labore reprehenderit, iure modi. Dolorum explicabo temporibus necessitatibus est iure distinctio aut ipsa, quasi ratione quod autem nisi laborum ex nobis, deleniti, excepturi. Sapiente temporibus officia cumque sint optio assumenda laborum veritatis, accusamus dolorem quidem animi ipsam expedita aliquam ipsa facere quaerat enim nesciunt, culpa vel impedit. Aut asperiores consequatur nobis nulla voluptatum tempora reiciendis laudantium quo, magnam eligendi quae amet quas ullam, provident harum debitis voluptatibus itaque eius distinctio nostrum quia doloribus. Dolorem, architecto quo obcaecati voluptatibus quibusdam dolore qui exercitationem facilis fuga accusantium, quis maiores. Iste maiores magni suscipit natus veniam quo quod officiis dolorem ad maxime quia voluptates ab nesciunt praesentium voluptate optio fuga, quae a odio non expedita exercitationem eos ratione? Quam labore dolores rem pariatur, libero, mollitia atque minus explicabo? Dolor, voluptatibus iste ratione ipsam, inventore nesciunt molestias eos incidunt suscipit molestiae tempore, maiores voluptas. Exercitationem atque dignissimos sed sequi, delectus dolores eligendi, quas cum sint, magnam dolorem perferendis iure deleniti sapiente et eveniet qui soluta quo obcaecati, accusamus? Quisquam soluta minus iure sint aliquam minima quod, adipisci nisi blanditiis perferendis repellat non maxime iusto consequuntur modi repellendus voluptatibus atque, recusandae voluptates in fuga eveniet. Esse nostrum velit odit officiis reprehenderit autem molestiae enim nisi iusto cupiditate, excepturi tempora qui, architecto quasi. Porro accusantium placeat ea. At omnis laboriosam aspernatur iure atque, illum minima, provident dolores accusantium itaque! A totam repellat deserunt sed quod, amet quibusdam sunt unde aliquid cupiditate aut vitae excepturi quas laboriosam praesentium laudantium reprehenderit tempore distinctio, omnis dolore. Explicabo dignissimos officiis, vel autem labore earum ipsa libero iusto illum consequatur nemo excepturi non possimus reiciendis laboriosam quibusdam odio voluptatem recusandae tenetur deleniti natus temporibus dolorem quisquam a quia! Beatae et nemo dicta ipsum natus quisquam recusandae vitae consequatur exercitationem, debitis fugiat necessitatibus fugit, quis atque quae, explicabo, molestiae nesciunt distinctio quia numquam dolores nisi saepe sed reiciendis. Repellat nemo enim ab labore, iure consectetur quidem consequatur iusto fugit molestiae dolores magni suscipit, numquam consequuntur atque aspernatur eaque autem cupiditate necessitatibus, quasi qui ratione alias. Veritatis officia perspiciatis debitis, fugiat, expedita, at cupiditate voluptas eveniet laudantium quasi, ipsam culpa delectus? Nihil, qui. Reprehenderit, non. Dolore pariatur nemo debitis, aperiam?</p>
+	</dif>
+	<div class="relative">
+		<h1>Позиция CSS</h1>
+		<p class="sticky">Липкий заголовок</p>
+		<p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ducimus, vel, veniam delectus dolores asperiores et praesentium deserunt odio aspernatur, a quo itaque doloremque sequi numquam perspiciatis libero, eos molestiae tenetur expedita facere eum dolor. A, dignissimos sapiente rerum eaque natus. Ratione et, porro deleniti totam ex necessitatibus esse soluta quos sit, qui ipsam, accusantium ut beatae itaque. Reiciendis nisi aut ad nesciunt vel rerum, cupiditate, saepe, quod placeat sint incidunt hic. Dignissimos itaque nam molestias natus quasi perferendis dolorum esse eum debitis animi aperiam doloribus corporis commodi provident architecto dolor voluptatum vel, ut beatae nostrum. Cupiditate quidem dolor eum aspernatur rem iste corporis libero quae praesentium, delectus expedita qui ea sapiente inventore quam earum sunt voluptatibus magnam totam recusandae error officiis dignissimos adipisci, eaque? Dolorum sunt reiciendis odio enim iste recusandae repellat cum dolores numquam sapiente voluptatum officia fugiat saepe beatae nemo culpa similique explicabo neque magni aliquam consequatur, tenetur doloremque iusto voluptatem illo! Laborum sed esse necessitatibus eius fugiat. Facere odit voluptatibus esse laborum similique porro saepe ea nemo. Aliquam rem animi voluptates fugiat facilis earum velit assumenda natus, nemo est modi temporibus saepe nisi delectus quidem deserunt debitis exercitationem quis soluta alias nulla ipsam ex. Illo, non?</p>
+	</div>
+	<div class="circle-green"></div>
+	<div class="circle-blue"></div>
+	<dif class="circle-dark"></dif>
+	<div class="one"></div>
+	<div class="zero"></div>
+	<div class="why"></div>
+	<div class="two"></div>
+	<div class="three"></div>
+	<div class="four"></div>
+</body>
+</html>
